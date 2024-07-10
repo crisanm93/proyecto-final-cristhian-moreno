@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: #151719;
+  left: -200px;
+  transition: all 500ms linear;
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+#sidebar ul li {
+  color: rgba(230, 230, 230, 0.9);
+  list-style: none;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+  text-align: center;
+  cursor: pointer;
+}
+
+.logo {
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  width: 100px;
+  height: auto;
+}
+
+#sidebar .toggle-btn {
+  position: absolute;
+  left: 230px;
+  top: 20px;
+  cursor: pointer;
+}
+
+#sidebar .toggle-btn span {
+  display: block;
+  width: 40px;
+  text-align: center;
+  font-size: 30px;
+  border: 3px solid #000;
+}
+.menu-link {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: rgba(230, 230, 230, 0.9);
+  text-decoration: none;
+  padding: 15px 10px;
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3); /* Opcional: borde inferior como los otros elementos */
+}
+
+/* Ajuste para el elemento inferior */
+.bottom-item {
+  position: absolute; /* Posición absoluta para colocarlo al final del sidebar */
+  bottom: 0; /* Alinear en la parte inferior */
+  width: 100%; /* Ocupa todo el ancho del sidebar */
+}
+.content {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+[data-content] {
+  display: none;
+}
+
+[data-content].active {
+  display: block;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+article h2 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+article img {
+  width: 70%;
+  height: auto;
+  margin-bottom: 10px;
+
+}
+
+
+article p {
+  font-size: 36px;
+  line-height: 1.5;
+  color: #555;
+  
+}
+
+
+
+
+
+
+

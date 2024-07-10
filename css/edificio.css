@@ -1,0 +1,212 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    background: white;
+}
+
+.a1 {
+    width: 100%;
+    background: rgb(36, 58, 84);
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.seccion1 {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.titulo {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 41px;
+    
+}
+
+.subtitulo {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 48px;
+}
+
+.logo {
+    width: 88px;
+    height: 82px;
+}
+
+.imagen1 {
+    width: 600px;
+    height: 360px;
+    border-radius: 50%;
+    margin: 2rem auto;
+    display: block;
+}
+
+.intro {
+    padding: 2rem;
+    background-image: url(../img/2.png)
+}
+
+.d3 {
+    width: 100%;
+    height: auto;
+}
+
+.imagen3 {
+    width: 555px;
+    height: 389px;
+    margin: 2rem auto;
+    display: block;
+}
+
+.contenedor {
+    max-width: 600px;
+    background: rgba(254, 253, 253, 1);
+    padding: 1rem;
+    border-radius: 32px;
+    margin: 0 auto;
+}
+
+.contenedor p {
+    font-size: 25px;
+    text-align: justify;
+}
+
+.propietarios-section {
+    background-color: rgba(71, 176, 176, 1);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.cuadro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuadro h2 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.input-text2 {
+    width: 272px;
+    height: 52px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.boton {
+    width: 200px;
+    padding: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.ubicacion-section {
+    background: rgb(36, 58, 84);
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+}
+
+.ubicacion-section h2, .ubicacion-section h3, .ubicacion-section h4 {
+    margin: 0.5rem 0;
+}
+
+.mapa {
+    width: 555px;
+    height: 389px;
+    margin: 2rem auto;
+    display: block;
+}
+
+.contacto-section {
+    padding: 2rem 0;
+    background-color: rgba(71, 176, 176, 1);
+    text-align: center;
+}
+
+.formulario {
+    background-color: rgba(71, 176, 176, 1); 
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.input-text {
+    width: 100%;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+textarea.input-text {
+    height: 17rem;
+}
+
+.boton.enviar {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.footer {
+    background-color: rgb(36, 58, 84);
+    color: white;
+    text-align: center;
+    }
