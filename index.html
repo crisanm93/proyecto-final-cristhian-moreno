@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>conjuntos web</title>
+    <title>Shmone tech</title>
 
 
     <link rel="shortcut icon" href="img/iconfa.png" type="image/x-icon">
@@ -19,18 +19,18 @@
     <header>
         
         <nav>
-            <a href=""><span>w.site</span></a>
-            <a href="#">Inicio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Portafolio</a>
-            <a href="#">Planes</a>
-            <a href="#">Contacto</a>
+          
+            <a href="#" id="btn-section1">Inicio</a>
+            <a href="#" id="btn-section2">Servicios</a>
+            <a href="#" id="btn-section3">Portafolio</a>
+            <a href="#" id="btn-section4">Planes</a>
+            <a href="subpaginas/contactanos.html">Contacto</a>
      
         </nav>
-        <section class="textos-header">
+        <section class="textos-header" id="section1">
             <h1>Comunidades conectadas con la tecnología, facilitando la vida de los propietarios con sitios web que automatizan servicios y comunicaciones.</h1>
             <h2>Simplifica tu comunidad con tecnología web.</h2>
-            <a href="#" class="boton">Comienza tu Transformación</a>
+            <a href="edificio.html" class="boton">Comienza tu Transformación</a>
         </section>
         <div class="wave" style="height: 150px; overflow: hidden;">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
@@ -40,7 +40,7 @@
     </header>
 
     <main class="main">
-        <section class="contenedor sobre-nosotros">
+        <section class="contenedor sobre-nosotros" id="section2">
            
             <div class="contenedor-sobre-nosotros">
                 <img src="img/nosotros.jpg" alt="" class="imagen-about-us">
@@ -54,20 +54,21 @@
         </section>
 
             </section>
-          <section class="portafolio">
+          <section class="portafolio" id="section3">
           <div class="contenedor">
             <h2 class="titulo">Portafolio</h2>
             <div class="galeria-port">
 
                 <div class="imagen-port">
+                    <a href="edificio.html">
                     <img src="img/real1.png" alt="">
+                </a>
                     <div class="hover-galeria">
                         <img src="img/iconfa.png" alt="">
                         <p>Nuestros clientes</p>
                     </div>
-                
-            </div>
-          </div>
+                </div>
+       
         </section>
         <section class="clientes contenedor">
             <h2 class="titulo">Nuestros administradores de propiedades</h2>
@@ -100,7 +101,7 @@
                  </div>
         </div>
     </section>
-    <section class="about-services">
+    <section class="about-services" id="section4">
         <div class="contenedor">
             <h2 class="titulo">Planes</h2>
             <div class="servicio-cont">
@@ -138,5 +139,7 @@
         </div>
         <h2 class="titulo-final">Todos los derechos reservados Cristhian moreno</h2>
     </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html> 
