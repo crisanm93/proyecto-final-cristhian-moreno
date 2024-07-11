@@ -27,9 +27,64 @@ btnSection3.addEventListener('click', ()=>{
     })
 });
 
-btnSection4.addEventListener('click', ()=>{
-    section4.scrollIntoView({
-        behavior:'smooth'
-    })
-});
 
+
+ /* validacion formulario */
+
+ 
+ document.addEventListener('DOMContentLoaded', () => {
+    let datos = {
+        nombre: '',
+        celular: '',
+        correo: '',
+        mensaje: ''
+    };
+
+    const nombre = document.querySelector('#nombre');
+    const celular = document.querySelector('#celular');
+    const correo = document.querySelector('#correo');
+    const mensaje = document.querySelector('#mensaje');
+
+    nombre.addEventListener('input', leerTexto);
+    celular.addEventListener('input', leerTexto);
+    correo.addEventListener('input', leerTexto);
+    mensaje.addEventListener('input', leerTexto);
+
+    function leerTexto(evento) {
+        datos[evento.target.id] = evento.target.value;
+    }
+
+    const formulario = document.querySelector('.formulario');
+
+    formulario.addEventListener('submit', function(evento) {
+        evento.preventDefault();
+        const { nombre, celular, correo, mensaje } = datos;
+
+        if (nombre === '' || celular === '' || correo === '' || mensaje === '') {
+            mostrarError('Todos los campos son obligatorios');
+            return; // Para que no muestre el mensaje de éxito si hay un error
+        }
+
+        mostrarMensaje('Enviando datos correctamente');
+    });
+
+    function mostrarError(mensaje) {
+        const error = document.createElement('p');
+        error.textContent = mensaje;
+        error.classList.add('error');
+        formulario.appendChild(error);
+        setTimeout(() => {
+            error.remove();
+        }, 5000);
+    }
+
+    function mostrarMensaje(mensaje) {
+        const exito = document.createElement('p');
+        exito.textContent = mensaje;
+        exito.classList.add('exito');
+        formulario.appendChild(exito);
+        setTimeout(() => {
+            exito.remove();
+        }, 5000);
+    }
+});

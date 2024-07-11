@@ -1,3 +1,4 @@
+/* validacion login js */
 document.addEventListener('DOMContentLoaded', () => {
     const username = document.getElementById('username');
     const password = document.getElementById('password');
@@ -10,7 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
         password: password.value,
       };
       console.log(data);
-      // Aquí puedes agregar la lógica para validar el login, por ejemplo, enviando los datos al servidor
+      
     });
   });
+  
+
   
