@@ -83,29 +83,46 @@ body {
 }
 
 article {
+  background-color: rgb(248, 240, 217);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #333;
   margin-bottom: 20px;
 }
 
 article h2 {
-  font-size: 44px;
-  margin-bottom: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
 }
 
 article img {
-  width: 70%;
-  height: auto;
-  margin-bottom: 10px;
+  display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto 15px;
+    border-radius: 8px;
 
 }
 
 
 article p {
-  font-size: 36px;
-  line-height: 1.5;
-  color: #555;
-  
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #666;
+  text-align: justify;
 }
 
+
+
+/* api */
 .main_container {
     text-align: center;
     margin-top: 50px;
