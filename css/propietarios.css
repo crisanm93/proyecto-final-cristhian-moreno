@@ -106,9 +106,29 @@ article p {
   
 }
 
+.main_container {
+    text-align: center;
+    margin-top: 50px;
+}
 
+#cat-img-container {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ccc;
+}
 
+#btn-cat{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #0fb8ad;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
 
-
+}
 
 
