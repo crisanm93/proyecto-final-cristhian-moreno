@@ -1,3 +1,4 @@
+
 html {
     box-sizing: border-box;
 }
@@ -10,23 +11,23 @@ body {
     font-size: 20px;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 .header {
     width: 100%;
-    background: white;
-}
-
-.a1 {
-    width: 100%;
-   background: rgb(36, 58, 84);
-    position: relative;
+    background: #262b2b;
+    padding: 2rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .nav {
     display: flex;
-    justify-content: center;
-    padding: 1rem 0;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .nav a {
@@ -35,39 +36,62 @@ body {
     margin: 0 1rem;
 }
 
-.seccion1 {
-    text-align: center;
-    padding: 2rem 0;
+.hero {
+    margin: 0;
+    padding: 0;
+    background: url(../img/torres.png) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+     
+    
+}
+
+.background-image {
+    display: none;
+}
+
+.overlay {
+    width: 520px;
+    height: 720px;
+    background: hsla(180, 6%, 16%, 0.927);
+    
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 140px 50px;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 170px;
+    height: auto;
+    border-radius: 100%;
+    position: relative;
+    top: -10px;
+    left: calc(40% - 50px);
 }
 
 .titulo {
     color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 41px;
-    
+    font-size: 68px;
+    margin: 0;
+    text-align: center;
+  
 }
 
 .subtitulo {
     color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 48px;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
 }
-
-.logo {
-    width: 88px;
-    height: 82px;
-}
-
-.imagen1 {
-    width: 600px;
-    height: 360px;
-    border-radius: 50%;
-    margin: 2rem auto;
-    display: block;
-}
-
+/* seccion nosotros */
 .intro {
-    padding: 2rem;
+    padding: 1rem;
     background-image: url(../img/2.png)
 }
 
