@@ -19,7 +19,7 @@ body {
 
 .a1 {
     width: 100%;
-    background: rgb(36, 58, 84);
+   background: rgb(36, 58, 84);
     position: relative;
 }
 
@@ -96,41 +96,6 @@ body {
     text-align: justify;
 }
 
-.propietarios-section {
-    background-color: rgba(71, 176, 176, 1);
-    padding: 2rem 0;
-    text-align: center;
-}
-
-.cuadro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cuadro h2 {
-    color: white;
-    font-size: 20px;
-    margin-bottom: 1rem;
-}
-
-.input-text2 {
-    width: 272px;
-    height: 52px;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-}
-
-.boton {
-    width: 200px;
-    padding: 0.5rem;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-}
 
 .ubicacion-section {
     background: rgb(36, 58, 84);
