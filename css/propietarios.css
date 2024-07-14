@@ -62,6 +62,20 @@ body {
   text-align: center;
   border-bottom: 1px solid rgba(100, 100, 100, 0.3); /* Opcional: borde inferior como los otros elementos */
 }
+/* inicio */
+.flyer-container {
+  text-align: center;
+ 
+
+}
+
+.flyer {
+  max-width: 100%;
+  height: auto;
+  margin: 100px 0 auto 0;
+
+}
+
 
 /* Ajuste para el elemento inferior */
 .bottom-item {

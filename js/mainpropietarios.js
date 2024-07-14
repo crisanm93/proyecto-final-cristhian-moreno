@@ -31,7 +31,7 @@ const apiUrl = 'https://api.thecatapi.com/v1/images/search';
 const btnCat = document.querySelector('#btn-cat');
 const catImgContainer = document.querySelector('#cat-img-container');
 
-// Escuchar cuando se da clic
+//  click
 btnCat.addEventListener('click', () => {
     // Llamar a la API
     fetch(apiUrl, {
