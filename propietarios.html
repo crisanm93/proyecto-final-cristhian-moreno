@@ -25,12 +25,16 @@
                 <a href="edificio.html" class="menu-link">Cerrar Sesión</a>
         </ul>
     </div>
+
+    
     <div data-content id="Inicio" class="active">
         <div class="flyer-container">
             <img src="img/inicio.png" alt="Flyer de información" class="flyer">
         </div>
     </div>
-    <div class="content">
+
+
+ <div class="content">
        
         <div data-content id="novedades" class="active">
          
@@ -84,15 +88,56 @@
                 <p>Hemos inaugurado una nueva área de juegos para niños, equipada con las últimas instalaciones de seguridad y diversión. Este espacio ha sido diseñado para que los más pequeños puedan disfrutar y desarrollar sus habilidades mientras se divierten.</p>
             </article>
         </div>
-        <div data-content id="cuentas">
-            <h1>Cuentas y Pagos</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia suscipit iste quaerat, 
-               autem eligendi, explicabo nesciunt illo necessitatibus sapiente quia, natus maiores.</p>
+    </div>
+
+  
+   <div data-content id="cuentas" class="active">
+        <div id="payment-section" class="payment-form">
+            <h2>Pago de Administración</h2>
+            <p>Valor: $500,000</p>
+            <form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mes</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Enero</td>
+                            <td><input type="text" value="Pagado" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Febrero</td>
+                            <td><input type="text" value="Pagado" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Marzo</td>
+                            <td><input type="text" value="Pagado" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Abril</td>
+                            <td><input type="text" value="Pagado" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Mayo</td>
+                            <td><input type="text" value="Pagado" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Junio</td>
+                            <td><input type="text" value="Pagado" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Julio</td>
+                            <td><input type="text" value="Pendiente de Pago" class="pending" readonly></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
         </div>
-        </div>
-
-
-
+    </div>
+ 
 
     <div data-content id="api" class="active">
        
@@ -106,12 +151,42 @@
         <button id="btn-cat">Selecciona tu gato</button>
     </div>
     </div>
+    
+
+
     <div data-content id="reservas" class="active">
+        <div class="card">
+            <img src="img/salon social.jpg" alt="Salon Social">
+            <div class="card-content">
+                <h3>Salon Social</h3>
+                <p>Un espacio elegante y versátil diseñado para reuniones sociales y eventos especiales. Perfecto para celebraciones, conferencias o simplemente para reunirse con amigos y familiares en un ambiente cómodo y acogedor.</p>
+                <br>
+                <a href="https://forms.gle/ywkaoRBzMLv8Mb5R8" class="button">Reservar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/bbq.jpg" alt="Zona BBQ">
+            <div class="card-content">
+                <h3>Zona BBQ</h3>
+                <p>Un área al aire libre equipada con parrillas modernas y cómodas áreas de estar, ideal para disfrutar de deliciosas comidas al aire libre en compañía de amigos y familiares. Perfecto para reuniones informales y celebraciones al aire libre.</p>
+                <br>
+                <a href="https://forms.gle/ywkaoRBzMLv8Mb5R8" class="button">Reservar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/zonacine.jpg" alt="Zona de cine">
+            <div class="card-content">
+                <h3>Zona de cine</h3>
+                <p>Un área al aire libre equipada con parrillas modernas y cómodas áreas de estar, ideal para disfrutar de deliciosas comidas al aire libre en compañía de amigos y familiares. Perfecto para reuniones informales y celebraciones al aire libre.</p>
+                <br>
+                <a href="https://forms.gle/ywkaoRBzMLv8Mb5R8" class="button">Reservar</a>
+            </div>
     </div>
 
     <div data-content id="directorio" class="active">
     
-
     <h1>Directorio </h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia suscipit iste quaerat, 
         autem eligendi, explicabo nesciunt illo necessitatibus sapiente quia, natus maiores.</p>
@@ -123,6 +198,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia suscipit iste quaerat, 
             autem eligendi, explicabo nesciunt illo necessitatibus sapiente quia, natus maiores.</p>
     </div>
+
 
     <script src="js/mainpropietarios.js"></script>
 </body>

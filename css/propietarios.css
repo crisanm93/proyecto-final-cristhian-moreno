@@ -134,7 +134,52 @@ article p {
   text-align: justify;
 }
 
+/*cuentas y pagos*/
+#cuentas {
+  margin-left: 300px;
+  padding: 20px;
+}
 
+.payment-form {
+  width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form h2 {
+  text-align: center;
+}
+
+.payment-form table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.payment-form th,
+.payment-form td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.payment-form th {
+  background-color: #f2f2f2;
+}
+
+.payment-form input[type="text"] {
+  width: 100%;
+  border: none;
+  background: transparent;
+  text-align: left;
+}
+
+.payment-form .pending {
+  color: red;
+  font-weight: bold;
+}
 
 /* api */
 .main_container {
@@ -163,3 +208,53 @@ article p {
 }
 
 
+/* reservas*/
+#reservas{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.card img {
+  width: 30%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card-content {
+  padding: 20px;
+  width: 70%;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  color: #666;
+}
+
+.button {
+  background-color: #00bfa5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #009688;
+}
