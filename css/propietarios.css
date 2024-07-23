@@ -182,21 +182,34 @@ article p {
 }
 
 /* api */
+#api {
+  padding: 20px;
+  background-color: #fff;
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1, h2 {
+  color: #0fb8ad;
+}
+p {
+  line-height: 1.6;
+}
 .main_container {
-    text-align: center;
-    margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
-
 #cat-img-container {
-    width: 300px;
-    height: 300px;
-    margin: 20px auto;
-    background-size: cover;
-    background-position: center;
-    border: 1px solid #ccc;
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
-
-#btn-cat{
+#btn-cat {
   border: none;
   outline: none;
   height: 40px;
@@ -204,7 +217,11 @@ article p {
   color: #fff;
   font-size: 18px;
   border-radius: 20px;
-
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#btn-cat:hover {
+  background: #099f94;
 }
 
 
@@ -257,4 +274,64 @@ article p {
 
 .button:hover {
   background-color: #009688;
+}
+
+/* directorio */
+.conte {
+  display: flex;
+  align-items: center;
+}
+.directory {
+  background-color: #fdd7a0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+.directory h2 {
+  text-align: center;
+}
+.directory ul {
+  list-style: none;
+  padding: 0;
+}
+.directory ul li {
+  margin: 10px 0;
+}
+.image-container {
+  margin-left: 20px;
+}
+.image-container img {
+  width: 150px;
+  height: auto;
+}
+
+/* reuniones  meets */
+
+#reuniones {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+h1, h2 {
+  text-align: center;
+}
+.agenda {
+  list-style: none;
+  padding: 0;
+}
+.agenda li {
+  margin: 10px 0;
+}
+.meeting-access {
+  text-align: center;
+  margin: 20px 0;
+}
+.meeting-access img {
+  width: 150px;
+  height: auto;
+  margin-top: 10px;
 }
