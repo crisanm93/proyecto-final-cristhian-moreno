@@ -17,11 +17,11 @@ body {
 .header {
     width: 100%;
     background: #262b2b;
-    padding: 2rem 0;
+    padding: 1rem 0;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .nav {
@@ -33,7 +33,7 @@ body {
 .nav a {
     color: white;
     text-decoration: none;
-    margin: 0 1rem;
+    margin: 2 1rem;
 }
 
 .hero {
