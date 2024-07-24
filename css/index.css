@@ -47,6 +47,12 @@ nav {
     padding: 30px 50px 0 0;
     background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
 }
+
+.brand img{
+    width: 55px;
+    height: 55px;
+  
+}
 nav a {
     color: #fff;
     font-weight: 300;
