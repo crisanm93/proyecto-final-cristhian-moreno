@@ -17,9 +17,12 @@ body{
 }
 
 .titulo{
-    color:#20C997;
+    color:#f1f1f1;
     font-size: 30px;
     text-align: center;
+    font-family: 'Space Mono', monospace;
+  
+    
 }
 
 /* header */
@@ -167,6 +170,7 @@ nav a:hover {
 }
 
 /* clientes */
+
 .clientes {
     margin-top: 40px;
 }
@@ -179,7 +183,7 @@ nav a:hover {
 .card {
     width: calc(33.33% - 10px);
     background: #fff;
-    padding: 80px;
+    padding: 60px;
     text-align: center;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -211,46 +215,51 @@ nav a:hover {
 /* Planes */
 .about-services {
     background: linear-gradient(to right, #0c2d4e, #018b8e);
+    padding: 50px 0;
 }
 
 .about-services .titulo {
     color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .servicio-cont {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    gap: 20px;
 }
 
 .servicio-ind {
-    width: calc(50% - 10px);
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px;
+    width: 48%;
+    text-align: left;
+    border-radius: 10px;
+    padding: 50px;
     background-color: #fff;
     margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-}
-
-.servicio-ind img {
-    width: 50%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.servicio-ind:hover {
-    transform: translateY(-10px);
+    font-family: 'Space Mono', monospace;
+  
 }
 
 .servicio-ind h3 {
     color: #333;
+    font-size: 2rem;
+    margin-bottom: 15px;
 }
 
 .servicio-ind p {
-    color: #777;
+    color: #555;
+    font-size: 1.7rem;
+    line-height: 1.6;
 }
 
+.servicio-ind:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 /* footer */
 footer {
     padding: 20px;
@@ -260,6 +269,7 @@ footer {
 
 .titulo-final {
     color: #fff;
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 300;
+    font-family: 'Courier New', Courier, monospace;
 }
