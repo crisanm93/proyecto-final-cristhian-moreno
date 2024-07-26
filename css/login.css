@@ -88,3 +88,14 @@ body {
   .login-box a:hover {
     color: #fff;
   }
+
+  /*media queris */
+@media screen and (max-width:750px) and (orientation: portrait) {
+  .login-box #logionForm{
+    width: 100%;
+    height: 450px;
+
+  
+  }
+}
+

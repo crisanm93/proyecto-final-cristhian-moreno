@@ -1,14 +1,14 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "open sans-serif";
 }
 
-.contenedor{
+.contenedor {
     padding: 60px 0;
     width: 90%;
     max-width: 1000%;
@@ -16,56 +16,81 @@ body{
     overflow: hidden;
 }
 
-.titulo{
-    color:#f1f1f1;
+.titulo {
+    color: #f1f1f1;
     font-size: 30px;
     text-align: center;
     font-family: 'Space Mono', monospace;
-  
-    
+
+
 }
 
 /* header */
-header{
+header {
     width: 100%;
     height: 1200px;
-    background: #000000;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #0e0f3699, #84888791), url(../img/portada.jpg);
-  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #020c1599, #01152443), url(../img/portada.jpg); 
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- background-size: cover;
- background-attachment: fixed;
- position: relative;
- 
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #0e0f3699, #84888791), url(../img/portada.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #020c1599, #01152443), url(../img/portada.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
 }
 
 
 nav {
     display: flex;
     justify-content: center;
-    padding: 30px 50px 0 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo semitransparente */
+    width: 100%;
+
 }
 
-.brand img{
+.brand {
+    width: 60px;
+}
+
+.brand img {
     width: 55px;
     height: 55px;
-  
 }
+
 nav a {
     color: #fff;
     font-weight: 300;
     text-decoration: none;
-    margin-left: 100px;
-    font-size: 35%px;
+    margin: auto;
+    font-size: 20px;
     font-family: 'Space Mono', monospace;
-  
-    
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    transition: .2s;
+
 }
-nav a:hover {
-    text-decoration: underline;
+
+.btn-responsive {
+    display: none;
 }
+
+nav .btn-menu:hover {
+    background-color: orange;
+}
+
+nav .menu {
+    display: flex;
+    width: 50%;
+    margin-left: calc(20% - 155px);
+    margin-right: 20%;
+}
+
 
 
 
@@ -74,18 +99,21 @@ nav a:hover {
     margin-top: 240px;
     padding-right: 200px;
     font-family: 'Space Mono', monospace;
-    
-  
+
+
 }
+
 .textos-header h1 {
     font-size: 60px;
     color: #fff;
 }
+
 .textos-header h2 {
     font-size: 30px;
     font-weight: 300;
     color: #fff;
 }
+
 .boton {
     display: inline-block;
     padding: 10px 20px;
@@ -96,39 +124,44 @@ nav a:hover {
     font-size: 18px;
     border-radius: 5px;
 }
-.wave{
+
+.wave {
     position: absolute;
     bottom: 0;
     width: 100%;
-  
+
 }
 
 .main {
     background-color: #020d15;
 }
+
 .contenedor-sobre-nosotros {
     display: flex;
     margin-top: 60px;
 }
 
 .imagen-about-us {
-    width: 25%;
-  
+    background-image: url("../img/nosotros.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
     margin-right: 90px;
+    height: auto;
 
-  /*  transform: scale(1.1);
+    /*  transform: scale(1.1);
     transition: 5s;
     */
-    
+
 }
 
 .sobre-nosotros .contenido-textos {
     text-align: right;
     margin-top: 200px;
-    padding-right: 200px;
+    padding-right: 5%;
     font-family: 'Space Mono', monospace;
     justify-content: center;
-    
+
 }
 
 .contenido-textos h3 {
@@ -143,7 +176,7 @@ nav a:hover {
     font-weight: 100;
     color: #fff;
 }
-   
+
 
 
 /* galeria */
@@ -156,7 +189,7 @@ nav a:hover {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 40px;
-    
+
 }
 
 .imagen-port {
@@ -200,14 +233,15 @@ nav a:hover {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-  
+
 }
 
 .card:hover {
     transform: translateY(-10px);
 }
 
-.card h4, .card h5 {
+.card h4,
+.card h5 {
     color: #333;
     font-size: 20px;
 }
@@ -215,7 +249,7 @@ nav a:hover {
 .card p {
     color: #777;
     font-size: 30px;
-    
+
 }
 
 /* Planes */
@@ -247,11 +281,11 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     font-family: 'Space Mono', monospace;
-  
+
 }
 
 .servicio-ind h3 {
-    color: #333;
+    color: #018b8e;
     font-size: 2rem;
     margin-bottom: 15px;
 }
@@ -266,6 +300,7 @@ nav a:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 /* footer */
 footer {
     padding: 20px;
@@ -278,4 +313,73 @@ footer {
     font-size: 24px;
     font-weight: 300;
     font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*media queris */
+@media screen and (max-width:750px) and (orientation: portrait) {
+    .textos-header h1 {
+        font-size: 2em;
+
+    }
+
+    .textos-header {
+        padding-right: 20px;
+
+    }
+
+    .contenedor-sobre-nosotros,
+    .cards,
+    .servicio-cont {
+        flex-direction: column;
+    }
+
+    .contenedor-sobre-nosotros .imagen-about-us {
+        width: 100%;
+        height: 450px;
+
+    }
+
+    .cards .card,
+    .servicio-cont .servicio-ind {
+        width: 100%;
+    }
+
+   /* .btn-responsive {
+      
+        display: block;
+        margin-right: 0;
+        margin-left: auto;
+        padding: 0;
+        margin-top: -10px;
+        width: auto;
+        text-align: end;
+    }
+    
+
+    .btn-menu {
+        display: none;
+
+
+    }
+    .menu {
+        margin-right:  5px !important;
+        margin-left: auto  !important;
+    } */
+
+    .menu {
+        height: 230px;
+        flex-direction: column;
+        text-align: center;
+       
+        
+      
+    }
+  .textos-header{
+    margin-top: 15%;
+   
+  }
+  .brand {
+    display: none;
+  }
 }

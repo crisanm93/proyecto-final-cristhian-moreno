@@ -30,10 +30,24 @@ body {
     align-items: center;
 }
 
-.nav a {
-    color: white;
-    text-decoration: none;
-    margin: 2 1rem;
+.nav :hover {
+    background-color: #47b0b0;
+  
+
+}
+
+.nav a  {
+        color: #fff;
+        font-weight: 100px;
+        text-decoration: none;
+        margin: auto;
+        font-size: 20px;
+        font-family: 'Space Mono', monospace;
+        width: 80%;
+        height: 50px;
+        text-align: center;
+        padding-top: 20px;
+        transition: .2s;
 }
 
 .hero {
@@ -132,12 +146,7 @@ body {
     margin: 0.5rem 0;
 }
 
-.mapa {
-    width: 555px;
-    height: 389px;
-    margin: 2rem auto;
-    display: block;
-}
+
 
 .contacto-section {
     padding: 2rem 0;
@@ -146,7 +155,7 @@ body {
 }
 
 .formulario {
-    background-color: rgba(71, 176, 176, 1); 
+    background-color: rgb(71, 176, 176); 
     max-width: 600px;
     padding: 2rem;
     border-radius: 1rem;
@@ -198,4 +207,63 @@ textarea.input-text {
     background-color: rgb(36, 58, 84);
     color: white;
     text-align: center;
+    }
+
+    @media screen and (max-width:750px) and (orientation: portrait) {
+        .nav {
+         
+        flex-direction: column;
+        text-align: left;
+        padding-right: 10px;
+       
+        }
+
+        .overlay {
+            width: 85%;
+            height: 70%;
+            background: hsla(180, 6%, 16%, 0.927);
+            
+            color: #fff;
+            top: 60%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 140px 50px;
+            justify-content: center;
+            align-items: center;
+        }
+         .titulo {
+            width: 50px;
+            height: 50%;
+            font-size: 30;
+            text-align: center; 
+            padding: 0px 50px;           
+        }
+        .logo{
+            width: 85px;
+            left: 30%;
+            
+            
+
+         
+        }
+     .subtitulo{
+     
+            height: 75%;
+            padding: 10px 50px;
+         
+          }
+          .imagen3 {
+            width: 300px;
+            height: 250px;
+            margin: 2rem auto;
+            display: block;
+        } 
+        .mapa {
+            width: 300px;
+            height: 250px;
+            margin: 2rem auto;
+            display: block;
+        }
     }
